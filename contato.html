@@ -60,29 +60,22 @@
           </div>
         </nav>
       </header>
-    
-    
+
     <h2 style="text-align: center; font-size: 140%;">Contato</h2>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-4">
-                <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=2140028922" role="button">Whatsapp</a>
-            </div>
-        </div>
-    </div> 
     <br>
     <form
     action="https://formspree.io/f/mdkozzal" method="POST">
-    <label>
-      Your email:
-      <input type="email" name="email">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
-    <!-- your other form fields go here -->
-    <button type="submit">Send</button>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Digite o seu melhor e-mail</label>
+      <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Esse e-mail será o qual iremos entrar em contato com você</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Mensagem</label>
+      <input type="message" class="form-control" name="message">
+    </div>
+</div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
     <footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
